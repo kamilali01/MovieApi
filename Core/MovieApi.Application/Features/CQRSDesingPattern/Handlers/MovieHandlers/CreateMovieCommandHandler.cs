@@ -17,7 +17,7 @@ namespace MovieApi.Application.Features.CQRSDesingPattern.Handlers.MovieHandlers
             _ctx = ctx;
         }
 
-        public async void Handle(CreateMovieCommand command)
+        public async Task Handle(CreateMovieCommand command)
         {
             _ctx.Movies.Add(new Domain.Entities.Movie
             {
