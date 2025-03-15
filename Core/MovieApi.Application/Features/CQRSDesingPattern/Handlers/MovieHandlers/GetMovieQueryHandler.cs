@@ -34,4 +34,5 @@ namespace MovieApi.Application.Features.CQRSDesingPattern.Handlers.MovieHandlers
                 Status = x.Status
             }).ToList();
         }
+    }
 }

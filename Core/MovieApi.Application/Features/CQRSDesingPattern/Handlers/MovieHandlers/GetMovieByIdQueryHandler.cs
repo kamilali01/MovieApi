@@ -17,7 +17,7 @@ namespace MovieApi.Application.Features.CQRSDesingPattern.Handlers.MovieHandlers
         {
             _ctx = ctx;
         }
-        public async Task<GetMovieByIdQueryResult> Handler(GetMovieByIdQuery query)
+        public async Task<GetMovieByIdQueryResult> Handle(GetMovieByIdQuery query)
         {
             var value = await _ctx.Movies.FindAsync(query.Id);
             return new GetMovieByIdQueryResult
